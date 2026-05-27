@@ -1,0 +1,37 @@
+horizon,beta,se,pval,n,ci_lower,ci_upper,specification,outcome,first_stage_f
+0,-0.009081,0.002136,0.000021,2397,-0.013268,-0.004893,A: Routine trend only,mean_routine,
+1,-0.011097,0.003651,0.002368,2346,-0.018252,-0.003941,A: Routine trend only,mean_routine,
+2,-0.008889,0.004285,0.038050,2295,-0.017288,-0.000490,A: Routine trend only,mean_routine,
+3,-0.008968,0.004547,0.048599,2244,-0.017880,-0.000055,A: Routine trend only,mean_routine,
+4,-0.010948,0.004931,0.026384,2193,-0.020612,-0.001284,A: Routine trend only,mean_routine,
+5,-0.012462,0.004861,0.010357,2142,-0.021990,-0.002934,A: Routine trend only,mean_routine,
+0,-0.008668,0.002040,0.000021,2397,-0.012665,-0.004670,B: Routine + Abstract + Manual trends,mean_routine,
+1,-0.010491,0.003523,0.002907,2346,-0.017396,-0.003585,B: Routine + Abstract + Manual trends,mean_routine,
+2,-0.008078,0.004086,0.048061,2295,-0.016087,-0.000069,B: Routine + Abstract + Manual trends,mean_routine,
+3,-0.007807,0.004268,0.067361,2244,-0.016173,0.000558,B: Routine + Abstract + Manual trends,mean_routine,
+4,-0.009185,0.004518,0.042041,2193,-0.018040,-0.000330,B: Routine + Abstract + Manual trends,mean_routine,
+5,-0.010220,0.004336,0.018425,2142,-0.018718,-0.001721,B: Routine + Abstract + Manual trends,mean_routine,
+0,-0.008381,0.001992,0.000026,2397,-0.012284,-0.004477,C: All task trends,mean_routine,
+1,-0.009863,0.003463,0.004400,2346,-0.016651,-0.003075,C: All task trends,mean_routine,
+2,-0.007162,0.004033,0.075720,2295,-0.015066,0.000742,C: All task trends,mean_routine,
+3,-0.006634,0.004162,0.110926,2244,-0.014790,0.001523,C: All task trends,mean_routine,
+4,-0.007942,0.004306,0.065150,2193,-0.016382,0.000499,C: All task trends,mean_routine,
+5,-0.008720,0.004029,0.030459,2142,-0.016617,-0.000822,C: All task trends,mean_routine,
+0,-0.006427,0.002009,0.001379,2397,-0.010365,-0.002489,Fixed 1977 Bartik,mean_routine,14.891041
+1,-0.005600,0.003968,0.158159,2346,-0.013377,0.002177,Fixed 1977 Bartik,mean_routine,14.891041
+2,-0.000244,0.004375,0.955504,2295,-0.008819,0.008331,Fixed 1977 Bartik,mean_routine,14.891041
+3,0.002523,0.005751,0.660859,2244,-0.008750,0.013796,Fixed 1977 Bartik,mean_routine,14.891041
+4,0.000779,0.006487,0.904382,2193,-0.011935,0.013493,Fixed 1977 Bartik,mean_routine,14.891041
+5,-0.001247,0.005919,0.833087,2142,-0.012848,0.010353,Fixed 1977 Bartik,mean_routine,14.891041
+0,-0.009559,0.001629,0.000000,2397,-0.012751,-0.006366,Industry decomposition,share_bartik_ind,
+1,-0.012990,0.002069,0.000000,2346,-0.017046,-0.008934,Industry decomposition,share_bartik_ind,
+2,-0.013645,0.003105,0.000011,2295,-0.019731,-0.007558,Industry decomposition,share_bartik_ind,
+3,-0.013138,0.004217,0.001836,2244,-0.021403,-0.004873,Industry decomposition,share_bartik_ind,
+4,-0.010968,0.005199,0.034890,2193,-0.021158,-0.000778,Industry decomposition,share_bartik_ind,
+5,-0.011635,0.005983,0.051792,2142,-0.023361,0.000091,Industry decomposition,share_bartik_ind,
+0,0.009559,0.001629,0.000000,2397,0.006366,0.012751,Industry decomposition,share_nonbartik_ind,
+1,0.012990,0.002069,0.000000,2346,0.008934,0.017046,Industry decomposition,share_nonbartik_ind,
+2,0.013645,0.003105,0.000011,2295,0.007558,0.019731,Industry decomposition,share_nonbartik_ind,
+3,0.013138,0.004217,0.001836,2244,0.004873,0.021403,Industry decomposition,share_nonbartik_ind,
+4,0.010968,0.005199,0.034890,2193,0.000778,0.021158,Industry decomposition,share_nonbartik_ind,
+5,0.011635,0.005983,0.051792,2142,-0.000091,0.023361,Industry decomposition,share_nonbartik_ind,

@@ -1,0 +1,56 @@
+# ============================================================
+#  .gitignore  -  Macro Displacement replication repository
+# ============================================================
+
+# --- Raw and worker-level microdata (not committed) -----------------
+# The CPS is public-domain US government data, but the full IPUMS-CPS
+# extracts are far too large for GitHub. The repository includes the
+# IPUMS extract codebooks so the extracts can be reconstructed at no
+# cost from cps.ipums.org. The constructed analysis panels and the
+# public BLS / O*NET / FRED inputs ARE tracked. See README.md.
+*.dat
+*.dat.gz
+*.parquet
+
+# --- Generated results: keep only results/robustness/ ---------------
+/results/*
+!/results/robustness/
+
+# --- LaTeX build artifacts ------------------------------------------
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.toc
+*.nav
+*.snm
+*.abs
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+Tex/*.pdf
+
+# --- Bulky Elsevier template bundle ---------------------------------
+# The 3 class files needed to compile are copied into Tex/ and tracked;
+# the full template bundle is not.
+Tex/els-cas-templates/
+
+# --- Local-only material (not for distribution) ---------------------
+archive/
+Citation Papers/
+AUDIT_*.md
+*AUDIT*.md
+CONSISTENCY_AUDIT_*.md
+PRESUBMISSION_REVIEW.md
+*_REVIEW.md
+*REVIEW*.md
+.vscode/
+
+# --- Python / OS cruft ----------------------------------------------
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db

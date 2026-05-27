@@ -1,0 +1,16 @@
+# Python dependencies for the Macro Displacement replication package.
+# Tested with Python 3.10+.  Install with:
+#     pip install -r requirements.txt
+pandas
+numpy
+matplotlib
+scipy
+linearmodels
+pyarrow
+openpyxl
+
+# Notes:
+#  - pyarrow is required to read/write the .parquet panels (DWS pipeline).
+#  - openpyxl is required to read the .xlsx BLS LAUS spreadsheet.
+#  - bls_download.py uses the BLS public API; if you run it, ensure the
+#    standard library 'urllib' is available (it ships with Python).
