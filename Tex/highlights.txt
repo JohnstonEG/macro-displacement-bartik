@@ -1,0 +1,7 @@
+Research Highlights — Cyclical Demand Shocks and Aggregate Task Composition: Evidence from a Bartik Instrument
+
+* Bartik LP-IV estimates how cyclical demand shocks reshape aggregate task content
+* A one-point rise in unemployment cuts routine task content of the employed
+* The effect persists over five years rather than reverting to baseline
+* Routine-manual jobs fall while non-routine manual employment rises
+* The adjustment runs within industries, not through industry mix

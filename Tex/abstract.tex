@@ -1,0 +1,80 @@
+%% =========================================================================
+%% Abstract — Labour Economics submission
+%% Compile with: pdflatex abstract.tex
+%% Produces:     abstract.pdf
+%%
+%% Pulls numeric values from paper/stats*.tex so the abstract always reflects
+%% the current pipeline output. Falls back gracefully with [?] placeholders
+%% if the stats files have not been generated.
+%% =========================================================================
+
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{parskip}
+\usepackage[hidelinks]{hyperref}
+
+% --- Pull in auto-generated stats macros ---
+% Tries Tex/-relative path first (matches manuscript.tex location), falls back
+% to project-root-relative path. Compile from either location and it works.
+\InputIfFileExists{../paper/stats.tex}{}{\InputIfFileExists{paper/stats.tex}{}{}}
+\InputIfFileExists{../paper/stats_dws.tex}{}{\InputIfFileExists{paper/stats_dws.tex}{}{}}
+\InputIfFileExists{../paper/stats_cps.tex}{}{\InputIfFileExists{paper/stats_cps.tex}{}{}}
+
+% --- Fallback macros (only fire if a value is undefined) ---
+\providecommand{\statsNStates}{[?]}
+\providecommand{\statsYearMin}{[?]}
+\providecommand{\statsYearMax}{[?]}
+\providecommand{\statsIvRoutineHZeroBeta}{[?]}
+\providecommand{\statsFsF}{[?]}
+\providecommand{\statsMechAttenuationHzero}{[?]}
+
+\title{Cyclical Demand Shocks and Aggregate Task Composition:\\
+       Evidence from a Bartik Instrument}
+
+\author{Ethan Johnston\thanks{%
+  Department of Economics, Illinois State University, Campus Box 4200,
+  Normal, IL 61790, United States. Email:
+  \href{mailto:egjohn3@ilstu.edu}{\texttt{egjohn3@ilstu.edu}}.
+  ORCID:
+  \href{https://orcid.org/0009-0000-7599-5346}{0009-0000-7599-5346}.}}
+\date{}
+
+\begin{document}
+\maketitle
+\thispagestyle{empty}
+
+\begin{abstract}
+\noindent
+I estimate the effect of cyclical labor demand shocks on the task composition
+of the employed workforce using local projections instrumented with a Bartik
+shift-share predictor. Exploiting variation in pre-period industry composition
+across \statsNStates{} states from \statsYearMin{} to \statsYearMax{}, I find
+that a one-percentage-point increase in state unemployment reduces the mean
+routine task content of employed workers by \statsIvRoutineHZeroBeta{} at
+impact (first-stage $F = \statsFsF$), with the effect persisting and modestly
+intensifying over a five-year horizon rather than reverting. The aggregate
+shift is concentrated in the routine-manual employment share, which falls
+sharply during downturns and remains depressed; the decline is offset by
+rising non-routine employment, with the non-routine-manual share the most
+persistent absorbing margin. Controlling for cumulative changes in industry
+employment composition attenuates the impact effect by only
+\statsMechAttenuationHzero\%, indicating that the response operates primarily
+within rather than between industries. Placebo tests reveal no significant
+differential pre-trend in routine task content, the labor-force-participation
+response is too small at all horizons to drive the headline pattern, and the
+result survives flexible technology controls, state-specific trends,
+region-by-year trends, leave-one-industry-out variants of the Bartik
+instrument, a drop-COVID subsample, and weak-instrument-robust inference. The
+findings suggest that cyclical labor demand shocks may contribute persistently
+to task reallocation.
+\end{abstract}
+
+\medskip
+\noindent\textbf{Keywords:}
+Task composition; Routine employment; Business cycles; Local projections;
+Bartik instrument; Labor reallocation.
+
+\medskip
+\noindent\textbf{JEL Codes:} E24, E32, J23, J24, J62.
+
+\end{document}
